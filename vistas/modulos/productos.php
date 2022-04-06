@@ -87,7 +87,7 @@ if($productos!=null){
         echo'<div class="card">';
         echo'<img src="'.$urlServidor.$value2["imagenProducto"].'"/>
         <hr>
-        <div id="desc1"><small><b>'.$value2["nombreProducto"].'</b></small></div>
+        <div id="desc1"><b>'.$value2["nombreProducto"].'</b></div>
         <br>
         <button class="button"><a href='.$url.'descripcion/'.$value2['id'].' target="_blank" ><span>Ver</span></a></button>';
         echo '</div>';
