@@ -1,0 +1,62 @@
+
+
+
+
+
+nav ul {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+}
+
+nav ul li a img {
+  width: 100px;
+  opacity: 50%;
+  transition: 0.3s;
+  filter: grayscale(50%);
+}
+nav ul li a img:hover {
+  opacity: 100%;
+  margin-top: -5px;
+  filter: grayscale(0%);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+nav ul li a img:active {
+  transform: scale(0.8);
+}
+
+ul {
+  list-style-type: none;
+}
+
+button.verMas{
+
+  border: none;
+  border-style: none;
+
+
+}
+
+
+button.btnBusqueda{
+ 
+  border: none;
+  border-style: none;
+  background: none;
+  font-size: 1.5em;
+  cursor: pointer;
+
+}
+
+
+/*ESTILOS DE LAS IMAGENES DE LA OPCION DE BUSQUEDA */
+
+
+.imgBusqueda{
+
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(73, 71, 71);
+
+
+}
