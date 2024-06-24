@@ -1,0 +1,115 @@
+/* ------------------------- */
+/* Estilos Generales */
+/* ------------------------- */
+
+
+.modal-contenido1{
+     background-color:rgb(246, 252, 252);
+     width:300px;
+     padding: 10px 20px;
+     margin-left:62em;
+     position: relative;
+     margin-top: 9em;
+     z-index: auto;
+     
+   }
+
+   .modal1{
+     background-color: rgba(0,0,0,.8);
+     position:fixed;
+     top:0;
+     right:0;
+     bottom:0;
+     left:0;
+     opacity:0;
+     pointer-events:none;
+   }
+
+   #emergenteModal:target{
+     opacity:1;
+     pointer-events:auto;
+   }
+
+
+   .formatoAviso {
+
+     background: #ff0000;
+     padding: 0.6em;
+     font-family: Arial, Helvetica, sans-serif;
+     height:2.5em;
+     width: 11.1em;
+     margin-left: 2;
+    
+
+
+   }
+
+   .formatoAviso a:link, a:active, a:visited {
+
+ 
+     text-decoration:none;
+    
+
+
+   }
+
+   .formatoAviso a {
+
+ 
+     color: white;
+     text-decoration:none;
+    
+
+
+   }
+
+
+/*=============================================
+ESCRITORIO PEQUEÑO O TABLET VERTICAL (SM revisamos en 768px)
+=============================================*/
+
+@media (max-width:991px) and (min-width:768px){
+
+ 
+ 
+ .modal-contenido1{
+     background-color:rgb(246, 252, 252);
+     width:300px;
+     padding: 10px 20px;
+     margin-left:3em;
+     position: relative;
+     margin-top: 14em;
+     
+   }
+ 
+ 
+ 
+ 
+ 
+ 
+ }
+
+
+
+ /*=============================================
+MOVIL (XS revisamos en 320px)
+=============================================*/
+
+@media (max-width:768px){
+
+
+     .modal-contenido1{
+         background-color:rgb(246, 252, 252);
+         width:300px;
+         padding: 10px 20px;
+         margin-left:3em;
+         position: relative;
+         margin-top: 14em;
+         
+       }
+     
+     
+     
+         
+     }
+

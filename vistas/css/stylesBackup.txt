@@ -1,0 +1,2086 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /** Reset para REMS - 62.5% = 10px de 16px **/
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
+    /*line-height: 2;*/
+}
+
+/** Globales **/
+img {
+    max-width: 100%;
+}
+.contenedor {
+    width: 95%;
+    max-width: 120rem; /** = 1200px; **/
+    margin: 0 auto;
+}
+h1 {
+    font-size: 3.8rem;
+}
+h2 {
+    font-size: 3.4rem;
+}
+h3 {
+    font-size: 3rem;
+}
+h4 {
+    font-size: 2.6rem;
+}
+
+/** Utilidades **/
+.seccion {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.fw-300 {
+    font-weight: 300;
+}
+.centrar-texto {
+    text-align: center;
+}
+.d-block {
+    display: block!important;
+}
+.contenido-centrado {
+    max-width: 800px;
+}
+
+
+/** Botones **/
+.boton {
+    color: rgb(248, 245, 245); /*14/01/2021*/
+    text-decoration: none;
+    font-size: 1.8rem;
+    padding: 1rem 3rem;
+    /*margin-top: 3rem;* Ajuste 02/03/2022/ */
+    display: inline-block;
+    text-align: center;
+    border: none;
+    display: block;
+    flex: 0 0 100%;
+    margin-top: 1em;
+
+}
+
+
+
+
+@media (min-width: 768px) {
+    .boton {
+        display: inline-block;
+        flex: 0 0 auto;
+    }
+}
+.boton:hover {
+    cursor: pointer;
+}
+
+.boton-amarillo {
+    background-color:    #ff0000;   /*#aeb6bf;*/
+    margin: 1em;
+
+}
+
+
+
+/* VALIDACION ESTILOS DEL BOTON VER MAS  */ 
+
+.ver-todas a:hover{
+
+    color: #ffffff;
+
+
+}
+
+.ver-todas a:link, a:visited, a:active , a:focus {
+
+
+    text-decoration: none;
+
+
+}
+
+.contenido-anuncio a:link, a:visited, a:active , a:focus{
+
+
+    text-decoration: none;
+
+
+}
+
+.contenido-anuncio a:hover{
+
+
+    color: #ffffff;
+
+
+}
+
+
+
+.boton-verde {
+    background-color:#232323e6; /*14/01/20201*/
+}
+
+/* Header */
+.site-header {
+    background-color:#E3DAC9;
+    /* Modificacion de Color Realizada 13 /01 /2021 */
+    /*padding: 1rem 0 3rem 0;*/
+}
+.site-header.inicio {
+    background-image: url(../img/header.jpg);
+    background-position: center center;
+    background-size: cover;
+    /*height: 100vh;*/
+    min-height: 60rem;
+    margin-bottom: auto;
+    height: auto;
+}
+.contenido-header {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+
+/* divs de la Cabecera de Inicio */
+
+.cabeceraInicio{
+
+
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+
+
+}
+
+
+/*=============================================
+ESCRITORIO GRANDE (LG revisamos en 1366px en adelante)
+=============================================*/
+
+@media (min-width:1200px){
+
+
+
+}
+
+/*=============================================
+ESCRITORIO MEDIANO O TABLET HORIZONTAL (MD revisamos en 1024px)
+=============================================*/
+
+@media (max-width:1199px) and (min-width:992px){
+    
+
+
+}
+
+/*=============================================
+ESCRITORIO PEQUEÑO O TABLET VERTICAL (SM revisamos en 768px)
+=============================================*/
+
+@media (max-width:991px) and (min-width:768px){
+    
+    
+    .logo{
+
+        width: 100%;
+        align-items: center
+
+
+    }
+
+
+
+}
+
+/*=============================================
+MOVIL (XS revisamos en 320px)
+=============================================*/
+
+@media (max-width:767px){
+
+    .cabeceraInicio{
+   
+        display: flex;
+        flex-direction: column;
+        align-items: center
+
+    }
+
+
+    .logo2{
+
+        width: 100%;
+        align-items: center
+
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+/*estilo del header principal pagina index */
+
+
+
+/* Media Querys  */ 
+
+@media (min-width: 768px) {
+    .contenido-header{
+        text-align: left;
+    }
+}
+.contenido-header h1 {
+    color: #ffffff;
+    padding-bottom: 5rem;
+    max-width: 60rem;
+    line-height: 2;
+}
+.barra2 {
+    padding-top: 12.5rem;
+    display: flex;
+    width: 100%;
+    height: 21em;
+    flex-direction: row;
+
+
+}
+
+
+.barra {
+   
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+ 
+}
+
+
+/*
+@media (min-width: 768px) {
+    .barra {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 5em;
+    }
+}
+
+*/
+
+/** Navegacion **/
+.navegacion a {
+    color: black;
+    text-decoration: none;
+    font-size: 2.2rem;
+    display: block;
+}
+@media (min-width: 768px) {
+    .navegacion a {
+        display: inline-block;
+        font-size: 1.8rem; /** = 18px **/
+        margin-right: 2rem;
+    }
+    .navegacion a:last-of-type {
+        margin: 0;
+    }
+}
+.navegacion a:hover {
+    color: #71B100;
+}
+
+/** Mobile Menu **/
+.mobile-menu img {
+    width: 5rem;
+}
+@media (min-width: 768px) {
+    .mobile-menu {
+        display: none;
+    }
+}
+.navegacion:target {
+    display: block;
+}
+.navegacion {
+    display: none;
+}
+@media (min-width: 768px) {
+    .navegacion {
+        display: block;
+    }
+}
+
+/** Iconos Nosotros **/
+@media (min-width: 768px) {
+    .iconos-nosotros {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.icono {
+    text-align: center;
+}
+
+
+
+
+@media (min-width: 768px) {
+    .icono {
+        flex-basis: calc(33.3% - 1rem);
+    }
+}
+
+
+@media (min-width: 768px) {
+    .iconoN {
+        flex-basis: calc(33.3% - 1rem);
+        margin-left: 3em;
+    }
+}
+
+.iconoN{
+    
+    text-align: justify;
+
+
+}
+
+.iconoN h3{
+    
+    text-align: center;
+
+
+}
+
+
+
+.icono h3 {
+    text-transform: uppercase;
+}
+/** Anuncios **/
+
+@media (min-width: 768px) {
+    .contenedor-anuncios{
+        display: flex;
+        /*justify-content: space-between;*/ /* Ajustado 10/03/2022 */
+        flex-wrap: wrap;
+    }
+}
+
+
+/* subCategoria */ 
+
+.contenedor-anunciosSubcategorias{
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:flex-start;
+    width: 100%;
+    margin-left: 10em;
+    margin-top: -3em;
+    
+}
+
+
+
+
+
+
+
+
+
+.anuncioSubcategorias {
+
+    margin-bottom: 1rem;
+    margin-left: 2em;
+    border: 1px solid #B5B5B5;
+    background-color: #F5F5F5;
+    flex-basis: 21em;
+    height: 24em;
+    margin-top: 3em;
+    
+}
+
+/* Categoria */
+
+.anuncio {
+    border: 1px solid #B5B5B5;
+    background-color: #F5F5F5;
+    margin-bottom: 2rem;
+    margin-left: 0.7em;
+
+}
+
+
+
+.anuncios {
+
+    /*display: flex;*/
+    margin-top: 1.5em;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 5em;
+
+}
+
+
+
+
+@media (min-width: 768px) {
+    .anuncio {
+        flex: 0 0 calc(33.3% - 1rem);
+    }
+}
+.contenido-anuncio {
+    padding-top: 1rem;
+}
+.contenido-anuncio h3, 
+.contenido-anuncio p  {
+    margin: 0;
+    text-align: center;
+    font-family: sans-serif;
+}
+.precio {
+    color: #71B100;
+    font-weight: 700;
+}
+.iconos-caracteristicas {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex: 1;
+    max-width: 500px;
+}
+.iconos-caracteristicas li {
+    /* flex: 1; */
+    display: flex;
+}
+.iconos-caracteristicas li img {
+    margin-right: 2rem;
+}
+.ver-todas {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/** Contacto Home **/
+.imagen-contacto {
+    background-image: url(../img/encuentra.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 40rem;
+    display: flex;
+    flex-direction: row;
+    /*align-items: center*/;
+}
+
+
+.contenido-contacto {
+    
+    padding-top: 3em;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+
+}
+
+
+
+
+
+
+
+.contenido-contacto p {
+    font-size: 1.8rem;
+}
+
+
+
+
+
+/** Sección Inferior **/
+@media (min-width: 768px) {
+    .seccion-inferior {
+        display: flex;
+        justify-content: space-between;
+    }
+    .seccion-inferior .blog {
+        flex-basis: 60%;
+    }
+    .seccion-inferior .testimoniales {
+        flex-basis: calc(40% - 2rem);
+    }
+}
+.entrada-blog {
+    margin-bottom: 2rem;
+}
+@media (min-width: 768px) {
+    .entrada-blog {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.entrada-blog:last-of-type {
+    margin-bottom: 0;
+}
+@media (min-width: 768px) {
+    .entrada-blog .imagen {
+        flex-basis: 40%;
+    }
+    .entrada-blog .texto-entrada {
+        flex-basis: calc(60% - 3rem);
+    }
+}
+
+
+
+
+.texto-entrada a {
+    color: #000000;
+    text-decoration: none;
+}
+.texto-entrada h4 {
+    margin: 0;
+    line-height: 1.4;
+}
+
+.texto-entrada{
+
+    margin-left: 8rem;
+    font-family:Arial, Helvetica, sans-serif;
+    font-style: normal;
+   
+
+
+}
+
+
+.texto-entrada h4::after {
+    content: '';
+    display: block;
+    width: 28rem;
+    height: .5rem;
+    background-color: #FF0000;
+    margin-top: 1rem;
+
+}
+.texto-entrada span {
+    color: #E08709;
+}
+/*** Testimoniales **/
+.testimonial {
+    background-color: #71B100;
+    font-size: 2.4rem;
+    padding: 2rem;
+    color: #ffffff;
+    border-radius: 2rem;
+}
+.testimonial  p {
+    text-align: right;
+}
+.testimonial blockquote::before {
+    content: '';
+    background-image: url(../img/comilla.svg);
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    left: -2rem;
+}
+
+.testimonial blockquote {
+    position: relative;
+    padding-left: 5rem;
+    font-weight: 300;
+}
+/** Footer **/
+.site-footer {
+    background-color: #E3DAC9; /*Cambio Realizado  13/01/2021 */
+    margin: 0;
+}
+.contenedor-footer {
+    margin-top: 5.5em; /* AJUSTADO 15/03/2022 DFFB */
+    padding: 3rem 0;
+    text-align: center;
+}
+@media (min-width: 768px) {
+    
+
+}
+.site-footer nav {
+    display: none;
+}
+@media (min-width: 768px) {
+    .site-footer nav {
+        display: block;
+    }
+}
+
+.copyright {
+    margin: 0;
+    color: black;
+}
+
+/** INTERNAS **/
+/* Nosotros **/
+@media (min-width: 768px) {
+    .contenido-nosotros {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 2rem;
+    }
+}
+
+.texto-nosotros blockquote {
+    font-weight: 900;
+    font-size: 2rem;
+    margin: 0;
+    padding: 1rem 0 3rem 0;
+}
+
+/** Anuncio **/
+.resumen-propiedad {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/** Contacto **/
+.contacto p {
+    font-size: 1.4rem;
+    color: #4f4f4f;
+    margin: 2rem 0 0 0;
+}
+legend {
+    font-size: 2rem;
+    color: #4f4f4f;
+}
+label {
+    font-weight: 700;
+    text-transform: uppercase;
+    display: block;
+}
+input:not([type="submit"]),
+textarea,
+select {
+    padding: 1rem;
+    display: block;
+    width: 100%;
+    background-color: #e1e1e1;
+    margin-bottom: 2rem;
+    border: none;
+    border-radius: 1rem;
+}
+input[type="radio"]{
+    width: auto;
+    margin: 0;
+}
+select {
+    -webkit-appearance: none;
+    appearance: none;
+}
+textarea {
+    height: 20rem;
+}
+.forma-contacto {
+    max-width:30rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* personalizados  13 /01 /2021 */ 
+
+/*Logo y titulo principal */
+
+.logo2{
+
+    margin-top: 2em;
+    width: 185px;
+    height: 149px;
+
+}
+
+.logo2 .principal{
+
+    font-size:1em;
+ 
+
+
+}
+
+.logo2 img{
+
+   width: 100%;
+   
+
+}
+
+
+.tituloLogo{
+
+    margin-top: 0.5rem;
+    display: inline-flex;
+
+}
+
+
+
+/*Redes Sociales */
+
+.redes-sociales{
+
+   width: 9em;
+   font-size: 1.5em;
+
+}
+
+
+
+
+.redes-socialesp{
+
+   width: 13em;
+   margin-top: -1em;
+
+}
+
+.redes-sociales a {
+
+ font-size: 2em;
+ color: black;
+ margin-right: 20px;
+ text-decoration: none; 
+
+}
+
+.redes-sociales a:last-child{
+    margin-right: 0;
+}
+
+
+/*Redes Sociales  Encabezado*/
+
+
+.encabezado a{
+
+ font-size: 1.5em;
+ color: rgb(0, 0, 0);
+ margin-right: 20px;
+ text-decoration: none; 
+
+
+}
+
+.encabezado a:last-child{
+    margin-right: 0;
+}
+
+/* redes sociales pie de pagina */
+
+
+.final a{
+
+ font-size: 2em;
+ color: black;
+ margin-right: 20px;
+ text-decoration: none;   
+
+
+}
+
+
+/* COMPARTIR EN REDES SOCIALES 14/03/2022  */
+
+
+.compartirRedes{
+	border:0px;
+	box-shadow:none;
+	margin:0px;
+}
+
+.compartirRedes li p{
+	color:white;
+	text-align: center;
+	font-size:18px;
+	cursor:pointer;
+
+}
+
+.btnFacebook{
+	background:#46639f;
+}
+
+
+
+
+
+
+
+/*Campo de Busqueda */
+
+.busqueda{
+
+    /*flex-grow:1;*/
+    flex-basis:20em;
+
+
+}
+
+.busqueda2{
+
+    flex-basis:20em;
+
+
+}
+
+.busqueda2 h4{
+
+    margin:0;
+    padding:0; 
+
+}
+
+
+/* Estilos de la busqueda primaria  */
+
+.bp{
+
+position: relative;
+display: flex;
+flex-direction: row;
+width: 100%;
+padding: 0;
+
+}
+
+
+
+
+
+
+.tituloPrimario{
+
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+.compartirRedes{
+	border:0px;
+	box-shadow:none;
+	margin:0px;
+}
+
+.compartirRedes li p{
+	color:white;
+	text-align: center;
+	line-height: 30px;
+	font-size:18px;
+	cursor:pointer;
+
+}
+
+
+
+.btnFacebook{
+
+    background:#46639f;
+
+
+  
+}
+
+
+.btn1{
+
+    
+    position: absolute;
+    text-align: right;
+    width: 39px;
+    margin-top: -55px;
+    margin-left: 201px;
+
+
+
+
+
+}
+
+.buscarPrimario {
+
+    display: flex;
+    /*flex-direction: row;*/
+    justify-content: flex-end;
+    /*width: 100%;*/
+    margin-right:7em;
+    position: relative;
+    margin-top:4em;
+
+}
+
+
+.buscarPrimario2 {
+
+    display: flex;
+    justify-content: flex-end;
+    margin-right:5em;
+    position: relative;
+    margin-top: 2em;
+
+}
+
+
+
+
+
+/* estilos del buscador */
+
+/*.buscar{
+
+    flex-basis: 50em;
+
+}
+
+*/
+
+.buscar input{
+
+    width: 15em;
+    height: 40px;
+    padding: 0 20px;
+    font-size: 18px;
+    outline: none;
+    border:1px solid silver;
+    border-radius:10px;
+
+
+}
+
+.btn{
+
+    width:40px;
+    position: absolute;
+    height: 55px;
+    line-height:55px;
+    top: 0;
+    right: 0; 
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+p.nombre-logo{
+
+  margin: 0 auto;
+  padding-bottom: 2em;
+  text-align: center;
+
+
+    
+
+}
+
+/* Padre */
+
+/*
+.anucios{
+
+     display: flex; 
+
+
+}
+
+*/
+
+.elemento{
+
+    flex-basis: calc(33.33% - 1rem);
+
+}
+
+
+
+/* Estilo Encabezado */ 
+
+.flex-encabezado{
+
+    display: flex;
+    justify-content: flex-end;
+
+
+}
+
+/* Estilo del Slide de las marcas */ 
+.marcas{
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+/* Modulos de Footer */
+
+.pie{
+
+    display: flex;
+    flex-flow:row wrap;
+    justify-content: space-between
+
+
+}
+
+
+
+
+.modulo3{
+
+ flex-basis: 20em;
+
+
+
+}
+
+.modulo2{
+
+    flex-basis:25em;
+
+
+}
+
+/* Navegacion Encabezado */
+
+/* BreadCrum */ 
+
+/* Style the list */
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+  background-color: #eee;
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+  color: #0275d8;
+  text-decoration: none;
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+  color: #01447e;
+  text-decoration: underline;
+} 
+
+/* Estilo para los menu primario */ 
+
+.navegacionp{
+
+    /*width: 80%;*/
+    flex-basis: 60em;
+    height:46px;
+    background: black;
+    color: white;
+    /*display: flex;*/
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 4px 4px;
+    align-items: center;
+    margin-top: -10px;
+
+}
+
+.navegacionp label{
+
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+
+
+}
+
+
+/*Estilos para el menu Secundarios  */
+
+
+
+
+
+/*fuente icono */
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../font/icomoon.eot?eppvf0');
+  src:  url('../font/icomoon.eot?eppvf0#iefix') format('embedded-opentype'),
+    url('../font/icomoon.ttf?eppvf0') format('truetype'),
+    url('../font/icomoon.woff?eppvf0') format('woff'),
+    url('../font/icomoon.svg?eppvf0#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  /*speak: never;*/
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-cheveron-up:before {
+  content: "\e900";
+}
+.icon-ctrl:before {
+  content: "\ea50";
+}
+
+
+
+@media(max-width:768px){
+
+    .navegacionp{
+
+    width:100%;
+    height:46px;
+    background: black;
+    color: black;
+    display: flex 0 0 auto;
+    justify-content: flex-start;
+     margin-top: -5em;
+
+}
+
+
+}
+
+/*Ajuste a la busqueda primaria media query responsive */
+
+
+@media(max-width:768px){
+
+    .busquedaPrimaria{
+
+        width: 100%;
+        height:46px; 
+        display: flex 0 0 auto;
+        margin-top: 1.5em;
+        justify-content: center;
+        /*justify-content: flex-center;*/
+        
+    }
+
+    
+    .buscarPrimario2{
+        
+        margin-top:1em;
+        width: 100%;
+        justify-content: center;
+
+      
+
+        
+    }
+
+
+    .pie{
+
+        display: flex;
+        flex-flow:column-reverse;
+        justify-content: space-between;
+    }
+
+    .modulo2{
+
+        display: flex;
+        flex-flow:column;
+        flex-basis: 13em;
+        align-items: center;
+        
+    }
+
+
+    .flex-encabezado{
+
+
+        flex-flow: column;
+        margin-left: 6em;
+    
+    
+    }
+
+    .anuncios{
+
+        flex-direction: row;
+        justify-content: flex-end;
+
+    }
+
+    img{
+
+        margin-top: 1.5em;
+
+
+    }
+
+
+
+}
+
+
+
+
+#btn-menu{
+
+    display: none;
+
+
+}
+
+.menup ul {
+
+    display: flex;
+    list-style: none;
+    background: black;
+
+
+}
+
+
+.menup ul ul {
+
+    display: none;
+
+}
+
+.menup a {
+
+
+    display: block;
+    padding: 7px 43px;
+    color: white;
+    text-decoration: none;
+
+
+}
+
+.menup a:hover{
+
+    background: red;
+
+}
+
+.menup a span{
+
+    margin-left: 10px;
+
+}
+
+.menup ul li:hover ul{
+
+    display: block;
+    position: absolute;
+
+
+}
+
+
+/* Reponsiva  */
+
+@media (max-width:768px){
+
+    .navegacionp label{
+
+        margin-top: 15px;
+        display: block;
+
+    }   
+
+    
+    .navegacions label{
+
+        margin-top: 15px;
+        display: block;
+
+    }   
+
+
+    .menup{
+
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        transform: translateX(-100%);
+        transition: all 0.3s;
+
+
+    }
+
+    .menup ul {
+
+        flex-direction: column;
+        background: #555;
+
+
+    }
+
+    .menup ul li:hover ul {
+
+
+        display: none;
+        position: static;
+
+
+    }
+
+    .menup a span{
+
+        position:  absolute;
+        right: 5px;
+
+    }
+
+    #btn-menu:checked ~ .menup{
+
+        transform: translateX(0%);
+
+
+    }
+
+
+    .menup ul ul {
+
+        background: rgba(0,0,0,0,4);
+
+
+    }
+
+    .menup ul ul a {
+
+
+        padding: 15px 35px;
+    }
+
+
+} 
+
+.submenup{
+
+    z-index: 3;
+
+
+
+}
+
+
+
+/* Estilos para los menus secundarios  */
+
+
+.navegacions{
+
+   
+    margin:-14px;
+  
+
+}
+
+
+
+#btn-menu{
+
+    display: none;
+
+
+}
+
+.menus ul {
+
+    display: flex;
+    list-style: none;
+    background: black;
+    z-index: 1;
+
+
+}
+
+
+.menus ul ul {
+
+    display: none;
+
+}
+
+.menus a {
+
+    display: block;
+    padding: 7px 43px;
+    color: white;
+    text-decoration: none;
+
+
+}
+
+.menus a:hover{
+
+    background: red;
+
+}
+
+.menus a span{
+
+    margin-left: 10px;
+
+}
+
+.menus ul li:hover ul{
+
+    display: block;
+    position: absolute;
+
+
+}
+
+
+/* Reponsiva  */
+
+@media (max-width:768px){
+
+  
+
+    .menus{
+
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        transform: translateX(-100%);
+        transition: all 0.3s;
+    }
+
+    .menus ul {
+
+        flex-direction: column;
+        background: #555;
+
+
+    }
+
+    .menus ul li:hover ul {
+
+
+        display: none;
+        position: static;
+
+    }
+
+    .menus a span{
+
+        position:  absolute;
+        right: 5px;
+
+    }
+
+    #btn-menu:checked ~ .menus{
+
+        transform: translateX(0%);
+
+
+    }
+
+
+    .menus ul ul {
+
+        background: rgba(0,0,0,0,4);
+
+
+    }
+
+    .menus ul ul a {
+
+
+        padding: 15px 35px;
+    }
+
+
+} 
+
+
+/* Estilos de las ventanas modales */
+
+
+
+.modal-contenido{   
+
+    display:flex; 
+    background-color:white;
+    width:500px;
+    height: 652px;
+    padding: 10px 20px;
+    margin: 1% auto;
+
+
+}
+
+.modal{
+  background-color: rgba(0,0,0,.8);
+  position:absolute;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  opacity:0;
+  pointer-events:none;
+
+}
+#miModal:target{
+  opacity:1;
+  pointer-events:auto;
+}
+
+
+.linkDescripcion{
+
+    background-color: firebrick;
+    color: white;
+    text-decoration: none;
+    border-style: none;
+    width:6.5em;
+    height:2.5em;
+
+
+}
+
+.linkDescripcion a {
+
+    text-decoration: none;
+
+}
+
+
+
+
+
+
+/* ESTILO DEL PAGINADOR */
+
+.pagina{
+    display: flex;
+    justify-content: center;
+
+}
+
+.pagination {
+    display: inline-block;
+    position: relative;
+
+    
+  }
+  
+  .pagination a {
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  
+  .pagination a.active {
+    background-color:#C0392B;
+    color: white;
+    border-radius: 5px;
+  }
+  
+  .pagination a:hover:not(.active) {
+    background-color: #ddd;
+    border-radius: 5px;
+  }
+
+.izquierda{
+
+   visibility:hidden;
+
+
+}
+
+.izquierda1{
+
+    display:block;
+
+
+}
+
+
+.derecha{
+
+
+     display:block;
+
+
+}
+
+
+.derecha1{
+
+
+     visibility:hidden;
+
+
+}
+
+/* ESTILOS DEL BOTON */
+
+
+.button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color:#ff0000;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 15px;
+    padding: 5px;
+    height: 30px;
+    width: 100px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    color: #FFFFFF;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+
+
+
+/*Escritorio Mediano*/
+
+@media (min-width:1200px){
+
+    /*=============================================
+    HEADER
+    =============================================*/
+
+
+}
+
+
+
+
+ /*=============================================
+    CAMBIO PARA REALIZAR REMOTO - --
+    =============================================*/
+
+@media (max-width:1199px) and (min-width:992px){
+
+    /*=============================================
+    HEADER
+    =============================================*/
+
+    .contenedor-anunciosSubcategorias{
+
+        display: flex;
+        flex-flow: row wrap;
+        justify-content:flex-start;
+        width: 100%;
+        margin-left: 2em;
+        margin-top: 2em;
+        
+    }
+
+
+    .logo2 {
+        margin-top:-20em;
+        display: flex;
+        flex-direction: column;
+        height: 30em;
+    }
+
+
+
+}
+
+
+
+/*=============================================
+ESCRITORIO PEQUEÑO O TABLET VERTICAL (SM revisamos en 768px)
+=============================================*/
+
+@media (max-width:991px) and (min-width:768px){
+
+    /*=============================================
+    HEADER
+    =============================================*/
+    iframe.video{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+    }
+
+
+
+.contenedor-anunciosSubcategorias{
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:flex-start;
+    width: 100%;
+    margin-left: 2em;
+    margin-top: 2em;
+    
+}
+
+
+}
+
+
+/*=============================================
+MOVIL (XS revisamos en 320px)
+=============================================*/
+
+@media (max-width:768px){
+
+.barra{
+
+
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+
+
+}
+
+
+h1.nombre-logo{
+
+
+    font-size: 1.5em;
+    flex-basis: 0em;
+
+}
+
+.contenido-header h1{
+
+    padding-bottom: 0em;
+
+
+}
+
+.contenedor-anunciosSubcategorias{
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:flex-start;
+    width: 100%;
+    margin-left: 0;
+    margin-top: 2em;
+    
+}
+
+
+
+.buscarPrimario {
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: flex-end;
+    /* width: 100%; */
+    margin-right: 0;
+    position: relative;
+    margin-top: 2em;
+}
+
+
+
+.modal-contenido1{
+    background-color:rgb(246, 252, 252);
+    width:300px;
+    padding: 10px 20px;
+    margin-left:3em;
+    position: relative;
+    margin-top: 14em;
+    
+  }
+
+
+
+    
+}
+
+/** pruebas de menu desplegable */
+
+.topnav {
+  overflow: hidden;
+  background-color: black;
+  margin: auto;
+  
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+
+}
+
+.topnav .active {
+  background-color: red;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 17px; 
+  text-decoration: none;   
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: black;
+  color: white;
+  text-decoration: none;
+
+}
+
+.dropdown-content a:hover {
+  background-color: red;
+  color: white;
+ 
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  z-index: 3;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+
+
+/* estilos de las marcas*/
+
+@-webkit-keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
+}
+.slider {
+  background: white;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+  height: 172px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 1200px;
+}
+.slider::before, .slider::after {
+  background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+  content: "";
+  height: 250px;
+  position: absolute;
+  width: 100px;
+  z-index: 2;
+}
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+.slider::before {
+  left: 0;
+  top: 0;
+}
+.slider .slide-track {
+  -webkit-animation: scroll 40s linear infinite;
+          animation: scroll 40s linear infinite;
+  display: flex;
+  width: calc(250px * 13);
+}
+.slider .slide {
+  height: 300px;
+  width: 300px;
+}
+
+
+
+
+/* Estilo del Zoom  */
+
+
+
+.lupa{
+
+    display:none;
+    position: absolute;
+    top:0;
+    left:0;
+    overflow: hidden;
+
+
+}
+
+.lupa img{
+
+    position:relative;
+    margin-top: 49%;
+    margin-left: -50%;
+    width: 160%;
+    
+
+
+}
+
+
+.zoomContainer
+{
+
+    border: inset 1px black;;
+
+
+
+}

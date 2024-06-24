@@ -1,0 +1,144 @@
+<?php
+
+
+
+
+?>
+
+
+<div class="box box-primary">
+
+	<!---Administrar Categorias--->
+
+	<div class="box-header with-border">
+
+		<h3 class="box-title">SubCategorias</h3>
+
+		<div class="box-tools pull-right">
+
+			<button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip" title="Collapse">
+
+				<i class="fa fa-minus"></i>
+
+			</button>
+
+		</div>
+
+
+	</div>
+
+	<div class="box-body">
+
+		<label>Seleccionar Categoria </label>
+
+		<select class="form-control opcionSubcategoria">
+			
+			<option  value="seleccione" selected="">Seleccione</option>
+
+			<?php
+
+			$valor=null;
+
+			foreach ($respuesta as $key => $value) {
+			# code...
+				echo '<option  value="'.$value['id'].'">'.$value["nombreCategoria"].'</option>';
+				
+			}
+
+			?>
+
+		</select>
+
+        <label>Seleccionar Subcategoria </label>
+
+        <select class="form-control Subcategoria ">
+
+        <option  value="seleccione" selected="">Seleccione Subcategoria</option>            
+
+        </select>
+
+		<hr>
+		
+
+	<div class="panel-body">
+
+
+		<form method="post"  enctype="multipart/form-data" >
+
+
+			<label>Nombre Subcategoría</label>
+
+            <input type="text" class="form-control nombreSub" name="nombreSub" placeholder="Enter ..." required>
+
+
+            <label>Descripcion Subcategoría</label>
+
+            <textarea class="form-control descripcionSub" rows="3" name="descSubcategoria" placeholder="Enter ..." required></textarea>
+
+
+            <br>
+
+            <input type="file" id="subirFotos" name="datosImagen">
+            
+            
+            <p class="help-block">Tamaño recomendado 500px * 100px</p>
+
+
+           	
+           	<p class="pull-right">
+
+					<img class="previsualizarLogo" width="200px" height="200px">
+
+			</p>
+
+
+            <div class="checkbox ">
+                <label>
+                    <input type="checkbox" class="valorSub" name="valorSub" visible="" value="">
+                    Visible
+                </label>
+            </div>
+
+            <input type="hidden" name="id" id="id" value="">
+            <input type="hidden" name="idCategoria" id="idCategoria" value="">
+            <input type="hidden" name="idSubcategoria" id="idSubcategoria" value="">
+
+
+             <button type="submit" class="btn btn-primary ">Actualizar Subcategoria</button>
+
+
+         </form>
+
+
+			<?php
+
+			$actualizarSubcategoria = new ControladorProducto();
+			$actualizarSubcategoria->ctrActualizarSubcategorias();
+
+			?>
+
+
+	</div>
+
+
+    <div class="box-footer">
+
+    	<button type="button" id="eliminarSubcategoria" class="btn btn-danger" pull-left ">Eliminar Subcategoria</button>  
+
+    </div>
+
+
+    		<?php
+
+				$borrarSubcategoria = new ControladorProducto();
+				$borrarSubcategoria->ctrEliminarSubcategoria();
+
+			?>	
+ 
+
+</div>
+
+</div>
+
+
+   

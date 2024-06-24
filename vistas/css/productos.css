@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');
+
+
+.title{
+    text-align: center;
+    font-size: 40px;
+    color: #6a6a6a;
+    margin-top: 100px;
+    font-weight: 100;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-left:8em;
+    padding-top: 1em;
+    align-content: center;
+}
+
+.container .card{
+    width: 20em;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 15px;
+    text-align: center;
+    transition: all 0.25s;
+}
+
+.container .card:hover{
+    /*transform: translateY(-15px);*/
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.container .card img{
+    width: 300px;
+    height: 220px;
+ 
+}
+
+
+.container .card h4{
+    font-weight: 600;
+}
+
+.container .card p{
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.container .card a {
+    font-weight: 500;
+    text-decoration: none;
+    color: black;
+  
+}
+
+
+
+/* Estilos de Ventana Modal  */
+
+
+.trigger{
+    text-align: center;
+  padding: 7px 13px;
+  background: #3e3e3e;
+  color: #fff;
+  font-size: 15px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  font-family: cursive;
+}
+
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.1);
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 1rem 1.5rem;
+  width: 24rem;
+  border-radius: 0.5rem;
+}
+.close-button {
+  float: right;
+  width: 1.5rem;
+  line-height: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  background-color: lightgray;
+}
+.close-button:hover {
+  background-color: darkgray;
+}
+.show-modal {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1.0);
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+
+  /*Estilo de prueba */
+
+  
+  
+  
+  #galeria {
+    width: 400px;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+  }
+  
+  nav ul li a img {
+    width: 100px;
+    opacity: 50%;
+    transition: 0.3s;
+    filter: grayscale(50%);
+  }
+  nav ul li a img:hover {
+    opacity: 100%;
+    margin-top: -5px;
+    filter: grayscale(0%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  nav ul li a img:active {
+    transform: scale(0.8);
+  }
+
+
+  /* MEDIA QUERYS */
+
+/*=============================================
+MOVIL (XS revisamos en 320px)
+=============================================*/
+
+
+@media (max-width:768px){
+
+
+    
+.container{
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-left:0em;
+  padding-top: 1em;
+  align-content: center;
+}
+
+
+    
+    
+        
+}
